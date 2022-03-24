@@ -1,6 +1,6 @@
 using System;
 
-namespace PollingBooth.Models
+namespace PollingBooth.Api.Models
 {
     public class Ballot
     {

@@ -1,8 +1,9 @@
 using System;
 
-namespace PollingBooth.Models
+namespace PollingBooth.Api.Models
 {
     public class Voter{
+        public string Username {get; set;}
         public string Name{get; set;}
         public string Address{get; set;}
         public int Ssn{get; set;}

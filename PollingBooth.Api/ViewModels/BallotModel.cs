@@ -1,6 +1,6 @@
 using System;
 
-namespace PollingCenter.ViewModels
+namespace PollingCenter.Api.ViewModels
 {
     public class BallotModel
     {

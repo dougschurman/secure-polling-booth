@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using API.Data;
-using API.Interfaces;
+using PollingBooth.Api.Data;
+using PollingBooth.Api.Interfaces;
+using PollingBooth.Api.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
 using System.IO;
@@ -23,8 +24,10 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             
-            services.AddDbContext<OrderContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<IDataProvider, DataProvider>();
+            services.AddDbContext<PollingBoothContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IVoterRepository, VoterRepository>();
+            services.AddScoped<IPollingCenterRepository, PollingCenterRepository>();
+            services.AddScoped<IBallotCounterRepository, BallotCounterRepository>();
 
             services.AddSwaggerGen(c =>
             {

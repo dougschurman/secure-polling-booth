@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lB19+iUynaWmo8vqBFFB4EjZBq7zb6HMzuc7ifFHDe4dKDTRDzbizLL57eQN30fHNBF8C6JM+raMvNwI9MHMdA==",
+  "dgSpecHash": "6wTXQYWLAZZqZ5FaG2lvtA1+GP3EKLWYJdh/cU867xSuq+vBABoYhLi2/zqgnMWrNYNNIcZbsg/gAEUiDPdjww==",
   "success": true,
-  "projectFilePath": "c:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\PollingBoothAPI.csproj",
+  "projectFilePath": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\PollingBoothAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\schur\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\schur\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

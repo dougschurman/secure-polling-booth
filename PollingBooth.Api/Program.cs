@@ -4,6 +4,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using PollingBooth.Api.Models;
+using PollingBooth.Api.Data;
 
 namespace API
 {
@@ -23,7 +24,7 @@ namespace API
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<OrderContext>();
+                    var context = services.GetRequiredService<PollingBoothContext>();
                     DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)

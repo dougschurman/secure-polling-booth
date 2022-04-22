@@ -1,0 +1,7 @@
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.csproj.AssemblyReference.cache
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.AssemblyInfoInputs.cache
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.AssemblyInfo.cs
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.csproj.CoreCompileInputs.cache
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\schur\Documents\Projects\secure-polling-booth\PollingBooth.Api\obj\Debug\netcoreapp6.0\PollingBoothAPI.MvcApplicationPartsAssemblyInfo.cache

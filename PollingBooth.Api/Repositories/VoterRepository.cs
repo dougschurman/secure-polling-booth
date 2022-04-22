@@ -3,6 +3,8 @@ using PollingBooth.Api.Interfaces;
 using PollingBooth.Api.Data;
 using PollingBooth.Api.Models;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace PollingBooth.Api.Repositories
 {
@@ -15,19 +17,33 @@ namespace PollingBooth.Api.Repositories
             _ctx = ctx;
         }
 
-        public bool CreateUser(string username, string name, string address, int ssn, string token, string password, string driverId, string salt, bool Submitted)
+        public void CreateUser(Voter voter)
         {
-            throw new NotImplementedException();
-        }
-
-        public Voter GetVoterByName(string username)
-        {
-            throw new NotImplementedException();
+            _ctx.Add(new Voter
+            {
+                Username = voter.Username,
+                Name = voter.Name,
+                Address = voter.Address,
+                Ssn = voter.Ssn,
+                Token = voter.Token,
+                Password = voter.Password,
+                DriverId = voter.DriverId,
+                Salt = voter.Salt,
+                Submitted = voter.Submitted,
+                Hpassword = voter.Hpassword
+            });
+            _ctx.SaveChanges();
         }
 
         public List<Voter> GetVoters()
         {
-            throw new NotImplementedException();
+            var voters = _ctx.Voters.AsNoTracking().ToList();
+            return voters;
+        }
+
+        public void setSubmitted(int userId){
+            var user = _ctx.Voters.Where(x => x.VoterId == userId).FirstOrDefault();
+            user.Submitted = true;
         }
     }
 }

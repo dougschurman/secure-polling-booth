@@ -3,6 +3,8 @@ using PollingBooth.Api.Interfaces;
 using PollingBooth.Api.Data;
 using PollingBooth.Api.Models;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace PollingBooth.Api.Repositories
 {
@@ -15,14 +17,27 @@ namespace PollingBooth.Api.Repositories
             _ctx = ctx;
         }
 
-        public int CountBallots(List<Ballot> ballots)
+        public Dictionary<string, int> CountBallots()
         {
-            throw new NotImplementedException();
+            var ballots = _ctx.Ballots.AsNoTracking().ToList();
+            Dictionary<string, int> candidates = new Dictionary<string, int>();
+            foreach(var ballot in ballots){
+                if(candidates.ContainsKey(ballot.Candidate))
+                {
+                    candidates.Add(ballot.Candidate, 1);
+                } else {
+                    int count;
+                    candidates.TryGetValue(ballot.Candidate, out count);
+                    candidates[ballot.Candidate] = count + 1;
+                }
+            }
+            return candidates;
         }
 
-        public List<Ballot> GetBallots(List<Ballot> ballots)
+        public List<Ballot> GetBallots()
         {
-            throw new NotImplementedException();
+            var ballots = _ctx.Ballots.AsNoTracking().ToList();
+            return ballots;
         }
     }
 }

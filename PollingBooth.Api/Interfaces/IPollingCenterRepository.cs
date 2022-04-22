@@ -7,7 +7,6 @@ namespace PollingBooth.Api.Interfaces
     public interface IPollingCenterRepository
     {
         List<Ballot> GenerateBallots();
-        bool ReleaseBallots();
         List<Ballot> GetSubmitted();
 
     }

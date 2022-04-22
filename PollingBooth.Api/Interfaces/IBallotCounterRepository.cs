@@ -6,8 +6,8 @@ namespace PollingBooth.Api.Interfaces
 {
     public interface IBallotCounterRepository
     {
-        int CountBallots(List<Ballot> ballots);
-        List<Ballot> GetBallots(List<Ballot> ballots);
+        Dictionary<string, int> CountBallots();
+        List<Ballot> GetBallots();
 
     }
 }

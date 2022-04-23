@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "d7b17CR9DreUlpE8qWA7oqt9Ve+AzWxhyQnYlWjwng0=",
+  "Source": "PollingBoothAPI",
+  "BasePath": "_content/PollingBoothAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PollingBoothAPI\\wwwroot",
+      "Source": "PollingBoothAPI",
+      "ContentRoot": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\wwwroot\\",
+      "BasePath": "_content/PollingBoothAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\wwwroot\\index.html",
+      "SourceId": "PollingBoothAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\wwwroot\\",
+      "BasePath": "_content/PollingBoothAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\wwwroot\\main.js",
+      "SourceId": "PollingBoothAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\schur\\Documents\\Projects\\secure-polling-booth\\PollingBooth.Api\\wwwroot\\",
+      "BasePath": "_content/PollingBoothAPI",
+      "RelativePath": "main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\main.js"
+    }
+  ]
+}
